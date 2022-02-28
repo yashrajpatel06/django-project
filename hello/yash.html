@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Validation </title>
+    <link rel="stylesheet" type="text/css" href="stylee.css">
+</head>
+<body>
+    <div class="input_container">
+        <form name="formValidation" id="formValidation" action="valid.html">
+            <div class="input-row">
+                <input type="name" id="namee"  name="name" placeholder="Name*" required>
+                <span class="formvalidationn" id="name_error_message"></span>
+            </div>
+            <div class="input-row">
+                <input type="email" id="emaill" name="email" placeholder="email*" required>
+                <span class="formvalidationn" id="email_error_message"></span>
+            </div>
+            <div class="input-row">
+                <input type="Phone" id="numberr" name="Phone" placeholder="Phone*" required>
+                <span class="formvalidationn" id="number_error_message"></span>
+            </div>
+            <div class="input-row">
+                <input type="Subject" id="subjectt" name="Subject" placeholder="Subject*" required>
+                <span class="formvalidationn" id="subject_error_message"></span>
+            </div>
+            <div class="input-row">
+                <textarea placeholder="Message*" name="formMessage"  required></textarea>
+            </div>
+            <div class="text-center">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

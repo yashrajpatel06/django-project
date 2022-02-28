@@ -1,0 +1,534 @@
+col-sm-3 text-center align-self-center
+
+
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> 
+
+
+body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+            }
+
+
+
+
+body[class="input_container"]{
+    font-family: arial;
+    font-size: 15px;
+    margin: 0;
+	/*color: #efefef !important;*/
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+    color: rgb(167, 11, 11);
+
+    display: flex;
+    align-items: center;
+    justify-content:  space-around;
+    min-height: 100vh;
+}
+{% extends 'base.html' %}
+<head>
+{% block title %} jai shiv ji {% endblock title %}
+<style>
+    *,*:after,*:before{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: arial;
+        font-size: 15px;
+        margin: 0;
+        /*color: #efefef !important;*/
+        background-attachment: fixed;
+        padding-top: 50px;
+        padding-bottom: 50px; 
+        color: rgb(167, 11, 11);
+    
+        display: flex;
+        align-items: center;
+        justify-content:  space-around;
+        min-height: 100vh;
+    }
+    .input_container{
+        width: 500px;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        border-radius: 0px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        border: 1px solid #2f3031;
+        font-size:small ;
+    }
+    .input_container .input-row{
+        margin-bottom: 12px;
+    }
+    .input_container input:not([type="submit"]),
+    .input_container textarea{
+        width: 100%;
+        margin: 0 0 3px;
+        background-color: #f0eeee;
+        color: #000;
+        padding: 10px 15spx;
+        height: 50px;
+        line-height: 30px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 2px transparent;
+        outline: 0px;
+        transition: all 0.5s ease-out;
+    }
+    .input_container textarea{
+        height: 100px;
+        resize: none;
+    }
+    .input_container input:not([type="submit"]):focus,
+    .input_container textarea:focus{
+        border-color: #77d4b9
+    }
+    .input_container input[type="submit"]:hover{
+    background-color: #41b9ff;
+    }
+    label.error{
+        font-weight: 900;
+        display: block;
+        color: #f00;
+        font-size: 11px;
+    }      
+</style>
+</head>
+{% block body %}
+    <!--registration form-->
+    <div class="input_container">
+        <h2>Sign Up</h2>
+        <h3>It's quick and easy.</h3>
+        <form name="formValidation" id="formValidation" action="valid.html">            
+            <div class="input-row">
+                <input type="name" id="fnamee"  name="first name" placeholder="first name*" required>
+                <span class="formvalidationn" id="fname_error_message"></span>
+            </div>
+            <div class="input-row">
+                <input type="name" id="lnamee"  name="last name" placeholder="last name*" required>
+                <span class="formvalidationn" id="lname_error_message"></span>
+            </div>
+            <div class="input-row">
+                <input type="email" id="emaill" name="email" placeholder="email*" required>
+                <span class="formvalidationn" id="email_error_message"></span>
+            </div>
+            <div class="input-row">
+                <input type="password" id="passwordd"  name="password" placeholder="new password*" required>
+                <span class="formvalidationn" id="password_error_message"></span>
+            </div>
+            <div class="input-row">
+                <input type="Phone" id="numberr" name="Phone" placeholder="Phone*" required>
+                <span class="formvalidationn" id="number_error_message"></span>
+            </div>
+            <div class="text-center">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+{% endblock body%}
+
+# None of the code written here will be added to the template
+float="right"
+*
+{
+	margin: 0;
+	padding: 0;
+}
+/*-------Navigation--------*/
+#nav-bar
+{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar-brand img
+{
+	height: 40px;
+	padding-left: 30px;
+
+}
+.navbar-nav li
+{
+	padding: 0 10px;
+}
+.navbar-nav li a 
+{
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a:hover
+{
+	color: #007bff!important;
+}
+.navbar
+{
+	background: #fff;
+}
+.navbar-toggler
+{
+	border: none!important;
+}
+.nav-link
+{
+	color: #555!important;
+	font-weight: 600;
+	font-size: 16px;
+}
+/*-----slider*/
+#slider
+{
+	width: 100%;
+}
+.carousel-caption
+{
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial!important;
+}
+.carousel-caption h5
+{
+    color: black;
+    font-size: 42px;
+}
+/*------About---*/
+#about
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+#about .btn
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.about-content 
+{
+	padding-top: 20px;
+}
+.skills-bar
+{
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+.progress-bar
+{
+	border-radius: 16px;
+}
+.progress
+{
+	border-radius: 16px;
+	margin-bottom: 20px;
+}
+/*------services---*/
+#services
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(yash01.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #efefef !important;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+#services h1
+{
+	text-align: center;
+	color: #efefef !important;
+	padding-bottom: 10px;
+}
+#services h1::after
+{
+content: '';
+background: #efefef;
+height: block;
+height: 3px;
+width: 170px;
+margin: 20px auto 5px;
+}
+.services
+{
+	margin-top: 40px;
+
+}
+#services p
+{
+	font-size: 14px;
+	margin-top: 20px;
+	color: #ccc; 
+}
+.services .col-md-3:hover
+{
+	background:  #007bff;
+	cursor: pointer;
+	transition: 0.7s;
+}
+/*----------Developer---------*/
+#team
+{
+	padding-top:  50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+h1{
+	text-align: center;
+	color: #555 !important;
+	padding-bottom: 10px;
+}
+h1::after 
+{
+	content: '';
+	background: #007bff;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+.profile-pic
+{
+	margin-top: 25px;
+}
+.profile-pic .img-box
+{
+     opacity: 1;
+     display: block;
+     position: relative;
+}
+.profile-pic .img-box img
+{
+     filter: grayscale(1);
+     height: 245px;
+     width: 229px;
+}
+.profile-pic .img-box img:hover
+{
+     filter: grayscale(0);
+     cursor: pointer;
+}
+.profile-pic h2
+{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #007bff !important;
+}
+.profile-pic h3
+{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+#team .fa
+{
+	height: 25px;
+	width: 25px;
+	color: #007bff !important;
+	background: #fff;
+	padding: 4px;
+	border-radius: 50%;
+}
+.img-box ul 
+{
+	padding: 15px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+.img-box ul li
+{
+	padding: 5px;
+	display: inline-block;
+}
+.img-box:hover ul
+{
+	opacity: 1;
+}
+.img-box ul, .img-box ul li 
+{
+	transition: 0.5s;
+}
+/*-------promo------------*/
+#promo
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(yash6.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 100px;
+	font-family: sans-serif;
+	font-size: 38px;
+}
+#price
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(yash3.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment: fixed;
+	text-align: center;
+	font-family: sans-serif;
+	
+}
+#price h1
+{
+	text-align: center;
+	color: #efefef !important;
+	padding-bottom: 30px;
+}
+#price h1::after
+{
+content: '';
+background: #efefef;
+height: block;
+height: 3px;
+width: 170px;
+margin: 10px auto 5px;
+}
+.price
+{
+	margin-top: 40px;
+}
+#price
+{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+/*-----------Testimonials--------*/
+#Testimonials
+{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+/*--------Get in Touch----------*/
+#contact
+{
+	background: #efefef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #777;
+}
+.follow
+{
+	background: #fff;
+	padding: 10px;
+	margin: 15px;
+}
+.Contact-info .fa
+{
+	margin: 10px;
+	color: #007bff;
+	font-weight: bold;
+}
+/*------------Footer---------*/
+#Footer
+{
+	background: #333;
+	color: #fff;
+	padding: 12px;
+}
+.fa-heart-o
+{
+	margin: 3px;
+	color: red;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
